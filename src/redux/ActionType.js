@@ -1,7 +1,9 @@
-export const SET_INPUTVAL = "SET_INPUTVAL"
-export const SET_CHECK_EDIT = "SET_CHECK_EDIT"
-export const SET_RESULT = "SET_RESULT"
-export const PUSH_DATA = "PUSH_DATA"
-export const SET_DEL = "SET_DEL"
-export const SET_EDIT = "SET_EDIT"
-export const SET_UPDATE = "SET_UPDATE"
+export const SET_INPUTVAL = "SET_INPUTVAL";
+export const SET_CHECK_EDIT = "SET_CHECK_EDIT";
+export const SET_RESULT = "SET_RESULT";
+export const PUSH_DATA = "PUSH_DATA";
+export const SET_DEL = "SET_DEL";
+export const SET_EDIT = "SET_EDIT";
+export const SET_UPDATE = "SET_UPDATE";
+export const SET_USER = "SET_USER";
+export const SET_CHECk = "SET_CHECk";
