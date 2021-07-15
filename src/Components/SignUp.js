@@ -48,7 +48,7 @@ const SignUp = () => {
   if (user) return <Redirect to={"/"} />;
   return (
     <form className='form' onSubmit={submit}>
-      <div className='column'>
+      <div className='column column1'>
         <h1 className='heading'>SIGN UP</h1>
         <input
           className='input'
@@ -71,10 +71,10 @@ const SignUp = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type='submit' className='input'>
+        <button type='submit' className='button'>
           Sign Up
         </button>
-        <p>{error}</p>
+        {error && <p>{error}</p>}
         <p>
           Already have an account? <a href='/'>Log In</a>
         </p>

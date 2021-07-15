@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
 }
 
 .App-logo {
@@ -45,6 +48,9 @@
 }
 
 .TodoDiv {
+  height: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,11 +63,12 @@
   height: 10%;
   width: 40%;
 }
-.column1 {
+.column2 {
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
   word-break: break-all;
-  /* width: 30%; */
+  width: 80%;
 }
 .row1 {
   display: flex;
@@ -73,9 +80,9 @@
 }
 .TodoInput {
   width: 30vw;
-  height: 5vh;
+  height: 6vh;
   font-size: 24px;
-  /* padding: 20px; */
+  padding: 0 5px;
   border: 2px solid black;
 }
 
@@ -86,23 +93,31 @@
 }
 
 .button2 {
-  height: 53px;
-  width: 145px;
+  height: 6.5vh;
+  width: 10.5vw;
+  line-height: 18px;
   background-color: gray;
   color: white;
   font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 20px;
-  margin-left: 20px;
+  /* letter-spacing: 1px; */
+  font-size: 16px;
+  margin-left: 1vw;
 }
 
-.button {
+.button4 {
+  width: 3vw;
   background-color: rgb(68, 68, 68);
   color: white;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 5px;
-  word-spacing: 8px;
+}
+
+.spinner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .button3 {
@@ -113,14 +128,66 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .column2{
+    margin-right: 20px;
+  }
   .space {
     width: 0;
   }
+  .TodoDiv{
+    margin: 3px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  
   .TodoInput {
-    width: 200px;
+    width: 40vw;
+    height: 4vh;
+    font-size: 16px;
   }
   .button2 {
-    width: 10px;
-    height: 30px;
+    width: 30%;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0;
+    height: 5vh;
+  }
+
+  .button4{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .row1{
+    width: 70vw;
+  }
+  .column2{
+    width: 80vw;
+  }
+  .row{
+    width: 19vw;
+    height: 7vh;
+  }
+  .divRow{
+    display: flex;
+    flex-direction: column;
+  }
+  .resultPara{
+    font-size: 16px;
+  }
+  .button3{
+    height: 4vh;
+    width: 18vw;
+
+  }
+}
+@media only screen and (max-width: 300px){
+  .button2 {
+    font-size: 10.5px;
+    line-height: 14px;
+  }
+  .column2{
+    margin-right: 10px;
   }
 }

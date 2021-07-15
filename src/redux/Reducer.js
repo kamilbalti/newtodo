@@ -15,7 +15,7 @@ export const initialState = {
   inputVal: "",
   result: [],
   checkEdit: false,
-  user: false,
+  user: "loading",
 };
 export default function Reducer(state = initialState, action) {
   switch (action.type) {

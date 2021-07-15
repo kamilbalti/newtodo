@@ -37,9 +37,9 @@ const Input = () => {
     dispatch(setInputVal(""));
   };
   return (
-    <div className='row1'>
+    <div className='row1 divRow'>
       <form
-        className='row1'
+        className='row1 formRow'
         onSubmit={!checkEdit && checkEdit !== 0 ? submit : updating}
       >
         <input
@@ -54,6 +54,7 @@ const Input = () => {
           <button className='button2'>update</button>
         )}
       </form>
+      <div className="row1">
       <button className='button2' onClick={() => copy()}>
         Copy
       </button>
@@ -63,6 +64,7 @@ const Input = () => {
       <button className='button2' onClick={() => clearAll()}>
         Clear all
       </button>
+      </div>
     </div>
   );
 };

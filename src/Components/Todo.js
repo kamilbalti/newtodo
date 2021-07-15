@@ -39,12 +39,12 @@ const Todo = () => {
   return (
     <div className='TodoDiv'>
       <div className='space'></div>
-      <div className='column1'>
+      <div className='column2'>
         <Input />
         <Result />
       </div>
       <div className='row'>
-        <button className='button2 button' onClick={() => logOut()}>
+        <button className='button2 button4' onClick={() => logOut()}>
           Sign Out
         </button>
       </div>
