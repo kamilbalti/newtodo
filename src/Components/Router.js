@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../redux/Action";
 import Todo from "./Todo";
 import { Spinner } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 const Router1 = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state);
@@ -20,12 +20,14 @@ const Router1 = () => {
   return (
     <Router>
       <Switch>
-        {(user !== "loading" && user && <Route exact path={"/"} component={Todo} />) ||
-        (user === "loading" &&   
-        <div className="spinner">
-          <Spinner animation="border" variant="secondary" />
-        </div>
-        )}
+        {(user !== "loading" && user && (
+          <Route exact path={"/"} component={Todo} />
+        )) ||
+          (user === "loading" && (
+            <div className='spinner'>
+              <Spinner animation='border' variant='secondary' />
+            </div>
+          ))}
         <Route exact path={"/"} component={SignIn} />
         <Route path={"/signup"} component={SignUp} />
         {/* <Route path={`/${user?.uid}`} component={Todo} /> */}

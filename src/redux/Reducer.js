@@ -13,7 +13,7 @@ import {
 export const initialState = {
   check: false,
   inputVal: "",
-  result: [],
+  result: "loading",
   checkEdit: false,
   user: "loading",
 };
